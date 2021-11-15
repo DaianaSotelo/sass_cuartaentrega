@@ -1,0 +1,174 @@
+/* esto es un comentario de CSS Puro*/
+* {
+  margin: 0; }
+
+body {
+  font-family: open sans, sans-serif;
+  background-color: whitesmoke; }
+
+/*Header*/
+.site-header {
+  background-color: white;
+  padding: 1rem 0 3rem 0;
+  transform: scale(1); }
+
+.inicio {
+  background-image: url(../img/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+  position: relative; }
+
+/*BEM*/
+/*Logo*/
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 3px;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.logo__local-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; }
+
+/*TERMINA BEM*/
+/*BEM*/
+.promociones {
+  background-color: white;
+  text-align: center;
+  padding: 50px 8px 20px; }
+
+.promociones__img {
+  width: 300px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 10px; }
+
+/*TERMINA BEM*/
+.normal {
+  font-style: normal;
+  font-weight: normal; }
+
+.negrita {
+  font-weight: bold; }
+
+.negritaDos {
+  font-weight: bold; }
+
+.textoGrande {
+  font-size: 40px; }
+
+.textoRelativo {
+  font-size: 200%; }
+
+.openSans {
+  font-family: open sans, sans-serif; }
+
+.centrar {
+  text-align: center; }
+
+.color {
+  color: black; }
+
+.mayusculas {
+  text-transform: uppercase; }
+
+.capitalizar {
+  text-transform: lowercase; }
+
+.interlineado {
+  line-height: 2; }
+
+.subrayado {
+  text-decoration: underline; }
+
+.espaciado {
+  letter-spacing: 15px; }
+
+/*ANIDACIONES*/
+.menu {
+  list-style-type: none;
+  padding: 0;
+  background: darkorange;
+  width: 100%;
+  margin: 0; }
+  .menu li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    text-align: center; }
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      padding: 20px;
+      display: block; }
+      .menu li a a:hover {
+        background: #e3d9d987;
+        color: white; }
+        .menu li a a:hover ul {
+          display: block; }
+
+.redes {
+  font-weight: bold; }
+
+.galeria {
+  background-color: white;
+  text-align: center;
+  padding: 50px 8px 20px; }
+
+.galeria img {
+  width: 200px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 10px; }
+
+/*BEM*/
+/*HORARIOS*/
+/*VARIABLES*/
+.horarios {
+  background: whitesmoke;
+  font-family: fantasy; }
+
+.grid-contenedor {
+  width: 50%;
+  background-color: white;
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-auto-rows: 30px; }
+
+.grid-contenedor__table-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: initial;
+  font-size: 1,9em; }
+
+.table-title__table-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: initial;
+  font-size: 1,5em;
+  /*TERMINA BEM*/ }
+
+/*MEDIA*/
+@media (min-width: 576px) {
+  .m-mobile {
+    margin-top: 20px; } }
+
+@media (min-width: 768px) {
+  .m-mobile {
+    margin-top: 20px; } }
